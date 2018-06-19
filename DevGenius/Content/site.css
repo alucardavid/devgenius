@@ -1,0 +1,433 @@
+﻿
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content{
+	bottom: 0;
+	height: 200px;
+	-webkit-flex: 1;  
+    -ms-flex: 1; 
+    flex: 1;
+}
+
+.content-hide{
+	display: none;	
+}
+
+.load{
+	background-color:#313b3d;
+	width: 100%;
+	height: 100%;
+	border: 1px solid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 8%;
+	z-index: 1;
+}
+
+header{
+	background-color:#313b3d;
+	padding: 10px 0;
+	flex-shrink: 0;
+}
+
+.logo{
+	float:left;
+	display:block;
+	text-align:center;	
+}
+
+.texto-empresa{
+	font-size: 15px;
+}
+
+.main-menu{
+	float:right;
+	margin-top:170px;
+	display:block;
+	text-align:center;
+}
+
+.main-menu nav{
+	overflow: hidden;
+}
+
+.main-menu ul{
+	list-style: none;
+	position: relative;
+    float: left;
+    left: 50%;
+	padding: 0;
+}
+
+.main-menu ul li{
+	float: left;
+	display: list-item;
+	position: relative;
+    float: left;
+    right: 50%;
+    margin: 0 5px; 
+}
+
+.main-menu ul li a{
+	padding:8px 3px;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:600;
+	text-align:left;
+	color:white;
+	display:block;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.main-menu ul li a:hover {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.corpo{
+	background-color:#f6f6f6;
+	padding: 20px 0 20px 0;
+	width: 100%;
+	
+}
+
+#myCarousel{
+	background-color:#f6f6f6;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      margin: auto;
+}
+
+.subCorpo {
+    background-color: white;
+    box-shadow: -7px 7px 5px #888888;
+    border: .1px solid #cccccc;
+}
+
+.empresa{
+	margin:10px;
+}
+
+.tituloPrincipal{
+	font-weight:400;	
+	margin-top:15px;
+	border-bottom: 2px solid #999999;
+}
+
+.empresa-sobre{
+	margin-top:18px;
+}
+
+.empresa-logo{
+	float:left;
+	text-align:center;
+	padding: 10px 30px 10px 10px;
+}
+
+
+.servicos{
+	margin:10px;
+}
+
+.servicos-container{
+	margin-top:20px;
+	margin-right: 30px;
+	min-width: 150px;
+	height: 100%;
+}
+
+.servicos-container ul {
+	text-align: center;
+	padding:0px;
+	border-right: 1px solid #ddd;
+	width: 100%;
+}
+
+.servicos-container ul li {
+	position: relative;
+	display: block;
+	margin-bottom: 1px;
+}
+
+.servicos-container ul li a {
+	font-size: 11px;
+	font-weight: 600;
+	text-decoration:none;
+	color: black;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 2px 0 0 2px;
+	-webkit-border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+	background-color: white;
+}
+
+.servicos-container ul li a:hover {
+	background-color:#74c2c3;
+	color: white;
+	background-image: url(../img/button.png);
+}
+
+.servicos-container ul li.active > a{
+	background-color:#74c2c3;
+	color: white;
+	background-image: url(../img/button.png);
+	cursor: default;
+}
+
+.servicos-box{
+	margin-top:20px;
+}
+
+.servicos-box div:not(.servicos-active){
+	display: none;
+    visibility: hidden;
+
+}
+
+.servicos-box div h3, .servicos-box div h4 {
+	color: #74c2c3;
+}
+
+
+.servicos-box #desenSites ul li {
+	margin: 10px 0 10px 0;
+}
+
+.servicos-active {
+    display: block;
+    animation: 1s ShowServ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ShowServ {
+    0% { 
+        opacity: 0;
+
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.empresario-grafico {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+img.laptop {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.contato {
+	margin: 10px;
+}
+
+.right-contato {
+    border-left: 1px solid #f6f6f6;
+}
+
+#contato input, textarea {
+    width: 100%;
+}
+
+.contato-corpo{
+    margin: 20px 0px 20px 0;
+    padding: 0 8px 0 8px;
+}
+
+.box {
+	border: 1px solid;
+}
+
+#inputDDD {
+	width: 60px;	
+}
+
+.divInputDDD{
+	min-width: 80px;	
+	padding-right: 0;
+}
+
+#inputDescri{
+	height: 150px;	
+}
+
+.btn-enviar{
+	background-color:#74c2c3;
+	color: white;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+.btn-enviar:hover{
+	background-color:#4db1b3;
+	color: black;
+}
+
+
+.input-validado{
+	border: 0;	
+}
+
+/*.loading{
+	height: 34px;
+	visibility: hidden;
+}
+
+.loading_show{
+	height: 34px;
+	display: block;
+	margin-top: 12px;	
+}*/
+
+
+.result{
+	color: #4db1b3;
+	text-align: left;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+footer{
+	background-color:#313b3d;
+	font-size: 14px;
+	padding: 10px 0;
+	bottom: 0;
+	height: auto;
+	-webkit-flex: 1;
+    -ms-flex: 1; 
+    flex: 1;
+}
+
+.endereco{
+	color: white;	
+}
+
+.endereco img{
+	height: 19px;
+	width: 20px	
+}
+
+.cd-top
+{
+    display: inline-block;
+    background: #74c2c3 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    height: 40px;
+	width: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s 0s, visibility 0s .3s;
+        
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+.cd-top.cd-fade-out {
+	opacity: .5;
+}
+.cd-top:hover {
+	opacity: .7;
+}
+
+@media only screen and (max-width: 650px) {
+    .logo{
+		float: none;
+	}
+	
+	.main-menu{
+		float: none;
+		margin-top: 0;
+	}
+	
+	.empresa-logo{
+		float:none;
+	}
+	
+	.servicos-container{
+		float: none;
+		width: 100%;
+	}
+
+	.servicos-container ul {
+		width: 100%;
+		border-right: 0;
+	}
+	
+	.cd-top {
+    	right: 30px;
+	    bottom: 30px;
+  	}
+
+    .fb-page {
+        float: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+	
+.borda{
+	border:1px solid;	
+}
+
+.active-serv-item{
+	display:block;
+}
+
+.fb-page {
+    float: right;
+}
