@@ -36,7 +36,6 @@ namespace DevGenius.Models
             SmtpClient client = new SmtpClient();
             MailMessage nMail = new MailMessage();
 
-
             client.Port = 25;
             client.Host = "relay-hosting.secureserver.net";
             client.EnableSsl = false;
